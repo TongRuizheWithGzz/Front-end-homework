@@ -4,6 +4,8 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import navbar from './components/navbar'
+import welcome from './components/welcome'
+import discover from './components/discover'
 
 Vue.config.productionTip = false
 
@@ -19,6 +21,18 @@ new Vue({
 	el:'#navbar',
 	template: '<navbar/>',
 	components:{navbar}
+})
+
+new Vue({
+	el:'#welcome',
+	template:'<welcome/>',
+	components:{welcome}
+})
+
+new Vue({
+	el:'#discover',
+	template:'<discover/>',
+	components:{discover}
 })
 
 
