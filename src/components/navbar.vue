@@ -2,19 +2,33 @@
 	<nav role="navigation" class="navbar navbar-default navbar-fixed-top">
 	    <div class="container">
 	      <div class="navbar-header">
-	        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-	          <span class="icon-bar"></span>
-	          <span class="icon-bar"></span>
-	          <span class="icon-bar"></span>
-	        </button>
 	        <a class="navbar-brand" href="index.html"><em><strong>Discover</strong></em></a>
 	      </div>
+				<form class="navbar-form navbar-left" role="search">
+				  <div class="form-group">
+				    <input type="text" class="form-control" placeholder="搜索 Discover">
+				  </div>
+					<button type="button" class="btn btn-default" aria-label="Left Align">
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+					</button>
+				</form>
 	      <div class="navbar-collapse collapse">
-	        <ul class="nav navbar-nav">
-	          <li class="active"><a href="#welcome">Welcome</a></li>
-	          <li><a href="#discover">发现</a></li>
-	          <li><a href="#share">分享</a></li>
-	          <li><a href="#about">关于我们</a></li>
+	        <ul class="nav navbar-nav navbar-right">
+	          <li class="active">
+							<a href="#welcome"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a>
+						</li>
+	          <li>
+							<a href="#discover"><span class="glyphicon glyphicon-tree-conifer" aria-hidden="true"></span></a>
+						</li>
+	          <li>
+							<a href="#share"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a>
+						</li>
+						<li>
+							<a href="#user"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a>
+						</li>
+	          <li>
+							<a href="#about"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+						</li>
 	        </ul>
 	      </div><!--/.nav-collapse -->
 	    </div><!--/.container -->
@@ -25,9 +39,6 @@
 export default {
   name: 'navbar',
   data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
   }
 }
 </script>
@@ -43,7 +54,7 @@ ul {
 }
 li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 ;
 }
 a {
   color: #42b983;
