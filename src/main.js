@@ -6,6 +6,7 @@ import router from './router'
 import navbar from './components/navbar'
 import welcome from './components/welcome'
 import discover from './components/discover'
+import waterfall from './components/waterfall'
 
 Vue.config.productionTip = false
 
